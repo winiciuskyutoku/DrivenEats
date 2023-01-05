@@ -140,8 +140,30 @@ footer {
     justify-content: center;
 }
 
-.botaoPedido p {
+.finalizarPedido1 {
     width: 60%;
+    text-decoration: none;
+    color: white;
+    display: none;
+    justify-content: center;
+}
+
+.finalizarPedido2 {
+    width: 60%;
+    text-decoration: none;
+    color: white;
+}
+
+.escondido {
+    display: none;
+}
+
+.aparecendo{
+    width: 60%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .bordaVerde1, .bordaVerde2, .bordaVerde3 {
@@ -151,4 +173,8 @@ footer {
     background-repeat: no-repeat;
     background-position-x: 142px;
     background-position-y: 183px;
+}
+
+.botaoVerde {
+    background-color: green;
 }
