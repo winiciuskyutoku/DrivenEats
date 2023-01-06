@@ -3,7 +3,9 @@ body {
     overflow-x: hidden;
 }
 
-
+.transparente {
+    opacity: 0.1;
+}
 
 h1 {
     font-family: 'Righteous', cursive;
@@ -146,14 +148,16 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 
-.finalizarPedido1 {
+.finalizarPedido {
     width: 60%;
     text-decoration: none;
     color: white;
     display: none;
     justify-content: center;
+    border: none;
 }
 
 .finalizarPedido2 {
@@ -185,4 +189,96 @@ footer {
 
 .botaoVerde {
     background-color: green;
+}
+
+/* menu de confirmação (Bônus) */
+
+
+.menuConfirmacao {
+    width: 90%;
+    height: 353px;
+    background-color: #50D074;
+    border-radius: 9px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuConfirmacao2 {
+    width: 90%;
+    height: 353px;
+    background-color: #50D074;
+    border-radius: 9px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.confirmarComida, .confirmarBebida, .confirmarSobremesa, .confirmarTotal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.confirmarTudo {
+    width: 90%;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+
+    margin-bottom: 28px;
+    margin-top: 21px;
+}
+
+.confirmarTudo p {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.confirmarTotal p {
+    font-weight: 700;
+}
+
+.menuConfirmacao button, .menuConfirmacao2 button {
+    background-color: white;
+    color: #50D074;
+    width: 87%;
+    height: 52px;
+    border-radius: 100px;
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+
+    margin-top: 24px;
+}
+
+.menuConfirmacao a, .menuConfirmacao2 a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-top: 10px;
 }

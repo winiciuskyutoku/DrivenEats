@@ -13,109 +13,128 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>DrivenEats</h1>
-        <p>Sua comida em 6 minutos</p>
-    </header>
-    <main>
-        <section class="opcoesPrato">
-            <h1>Primeiro, seu prato</h1>
-            <div class="prato"> 
-                <div class="secaoPrato1 secaoPrato" onclick="selecionado('.secaoPrato1')">
-                    <div class="conteudoPrato">
-                        <img src="frango_yin_yang.png" alt="frango_yin_yang">
-                        <h2>Frango Yin Yang1</h2>
-                        <h3>Um pouco de batata, um pouco de salada</h3>
-                        <p>R$ <strong>14,90</strong></p>
+    <div class="container">
+        <header>
+            <h1>DrivenEats</h1>
+            <p>Sua comida em 6 minutos</p>
+        </header>
+        <main>
+            <section class="opcoesPrato">
+                <h1>Primeiro, seu prato</h1>
+                <div class="prato">
+                    <div class="secaoPrato1 secaoPrato" onclick="selecionado('.secaoPrato1')">
+                        <div class="conteudoPrato">
+                            <img src="frango_yin_yang.png" alt="frango_yin_yang">
+                            <h2>Frango Yin Yang1</h2>
+                            <h3>Um pouco de batata, um pouco de salada</h3>
+                            <p>R$ <strong>14,90</strong></p>
+                        </div>
+                    </div>
+                    <div class="secaoPrato2 secaoPrato" onclick="selecionado('.secaoPrato2')">
+                        <div class="conteudoPrato">
+                            <img src="frango_yin_yang.png" alt="frango_yin_yang">
+                            <h2>Frango Yin Yang2</h2>
+                            <h3>Um pouco de batata, um pouco de salada</h3>
+                            <p>R$ <strong>28,90</strong></p>
+                        </div>
+                    </div>
+                    <div class="secaoPrato3 secaoPrato" onclick="selecionado('.secaoPrato3')">
+                        <div class="conteudoPrato">
+                            <img src="frango_yin_yang.png" alt="frango_yin_yang">
+                            <h2>Frango Yin Yang3</h2>
+                            <h3>Um pouco de batata, um pouco de salada</h3>
+                            <p>R$ <strong>10,20</strong></p>
+                        </div>
                     </div>
                 </div>
-                <div class="secaoPrato2 secaoPrato" onclick="selecionado('.secaoPrato2')">
-                    <div class="conteudoPrato">
-                        <img src="frango_yin_yang.png" alt="frango_yin_yang">
-                        <h2>Frango Yin Yang2</h2>
-                        <h3>Um pouco de batata, um pouco de salada</h3>
-                        <p>R$ <strong>28,90</strong></p>
+            </section>
+            <section class="opcoesPrato">
+                <h1>Agora, sua bebida</h1>
+                <div class="prato">
+                    <div class="secaoBebida1 secaoPrato" onclick="selecionado2('.secaoBebida1')">
+                        <div class="conteudoPrato">
+                            <img src="coca-cola.png" alt="coca-cola">
+                            <h2>Coquinha gelada</h2>
+                            <h3>Lata 350ml</h3>
+                            <p>R$ <strong>4,90</strong></p>
+                        </div>
+                    </div>
+                    <div class="secaoBebida2 secaoPrato" onclick="selecionado2('.secaoBebida2')">
+                        <div class="conteudoPrato">
+                            <img src="coca-cola.png" alt="coca-cola">
+                            <h2>Sprite gelada</h2>
+                            <h3>Lata 350ml</h3>
+                            <p>R$ <strong>3,70</strong></p>
+                        </div>
+                    </div>
+                    <div class="secaoBebida3 secaoPrato" onclick="selecionado2('.secaoBebida3')">
+                        <div class="conteudoPrato">
+                            <img src="coca-cola.png" alt="coca-cola">
+                            <h2>Guaraná gelada</h2>
+                            <h3>Lata 350ml</h3>
+                            <p>R$ <strong>14,10</strong></p>
+                        </div>
                     </div>
                 </div>
-                <div class="secaoPrato3 secaoPrato" onclick="selecionado('.secaoPrato3')">
-                    <div class="conteudoPrato">
-                        <img src="frango_yin_yang.png" alt="frango_yin_yang">
-                        <h2>Frango Yin Yang3</h2>
-                        <h3>Um pouco de batata, um pouco de salada</h3>
-                        <p>R$ <strong>10,20</strong></p>
+            </section>
+            <section class="opcoesPrato">
+                <h1>Por fim, sua sobremesa</h1>
+                <div class="prato">
+                    <div class="secaoSobremesa1 secaoPrato" onclick="selecionado3('.secaoSobremesa1')">
+                        <div class="conteudoPrato">
+                            <img src="pudim.png" alt="pudim">
+                            <h2>Pudim</h2>
+                            <h3>Apenas pudim</h3>
+                            <p>R$ <strong>7,90</strong></p>
+                        </div>
+                    </div>
+                    <div class="secaoSobremesa2 secaoPrato" onclick="selecionado3('.secaoSobremesa2')">
+                        <div class="conteudoPrato">
+                            <img src="pudim.png" alt="pudim">
+                            <h2>Gelatina</h2>
+                            <h3>Apenas pudim</h3>
+                            <p>R$ <strong>17,99</strong></p>
+                        </div>
+                    </div>
+                    <div class="secaoSobremesa3 secaoPrato" onclick="selecionado3('.secaoSobremesa3')">
+                        <div class="conteudoPrato">
+                            <img src="pudim.png" alt="pudim">
+                            <h2>Quindim</h2>
+                            <h3>Apenas pudim</h3>
+                            <p>R$ <strong>3,30</strong></p>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </main>
+        <footer>
+            <button  class="botaoPedido" id="botaoPedido" disabled noshade  onclick="menuConfirmacao()" >Selecione 3 itens<br>para finalizar o pedido</button>
+        </footer>
+    </div>
+    <div class="menuConfirmacao"> <!-- menu de confirmação -->
+        <h4>Confirme seu pedido</h4>
+        <div class="confirmarTudo">
+            <div class="confirmarComida">
+                <p id="confirmarComida">teste123</p>
+                <p id="confirmarComidaPreco">teste123</p>
             </div>
-        </section>
-        <section class="opcoesPrato">
-            <h1>Agora, sua bebida</h1>
-            <div class="prato"> 
-                <div class="secaoBebida1 secaoPrato" onclick="selecionado2('.secaoBebida1')">
-                    <div class="conteudoPrato">
-                        <img src="coca-cola.png" alt="coca-cola">
-                        <h2>Coquinha gelada</h2>
-                        <h3>Lata 350ml</h3>
-                        <p>R$ <strong>4,90</strong></p>
-                    </div>
-                </div>
-                <div class="secaoBebida2 secaoPrato" onclick="selecionado2('.secaoBebida2')">
-                    <div class="conteudoPrato">
-                        <img src="coca-cola.png" alt="coca-cola">
-                        <h2>Sprite gelada</h2>
-                        <h3>Lata 350ml</h3>
-                        <p>R$ <strong>3,70</strong></p>
-                    </div>
-                </div>
-                <div class="secaoBebida3 secaoPrato" onclick="selecionado2('.secaoBebida3')">
-                    <div class="conteudoPrato">
-                        <img src="coca-cola.png" alt="coca-cola">
-                        <h2>Guaraná gelada</h2>
-                        <h3>Lata 350ml</h3>
-                        <p>R$ <strong>14,10</strong></p>
-                    </div>
-                </div>
+            <div class="confirmarBebida">
+                <p id="confirmarBebida">teste123</p>
+                <p id="confirmarBebidaPreco">teste123</p>
             </div>
-        </section>
-        <section class="opcoesPrato">
-            <h1>Por fim, sua sobremesa</h1>
-            <div class="prato"> 
-                <div class="secaoSobremesa1 secaoPrato" onclick="selecionado3('.secaoSobremesa1')">
-                    <div class="conteudoPrato">
-                        <img src="pudim.png" alt="pudim">
-                        <h2>Pudim</h2>
-                        <h3>Apenas pudim</h3>
-                        <p>R$ <strong>7,90</strong></p>
-                    </div>
-                </div>
-                <div class="secaoSobremesa2 secaoPrato" onclick="selecionado3('.secaoSobremesa2')">
-                    <div class="conteudoPrato">
-                        <img src="pudim.png" alt="pudim">
-                        <h2>Gelatina</h2>
-                        <h3>Apenas pudim</h3>
-                        <p>R$ <strong>17,99</strong></p>
-                    </div>
-                </div>
-                <div class="secaoSobremesa3 secaoPrato" onclick="selecionado3('.secaoSobremesa3')">
-                    <div class="conteudoPrato">
-                        <img src="pudim.png" alt="pudim">
-                        <h2>Quindim</h2>
-                        <h3>Apenas pudim</h3>
-                        <p>R$ <strong>3,30</strong></p>
-                    </div>
-                </div>
+            <div class="confirmarSobremesa">
+                <p id="confirmarSobremesa">teste123</p>
+                <p id="confirmarSobremesaPreco">teste123</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="botaoPedido">     
-            <p class="finalizarPedido2">
-                Selecione os 3 itens para fechar o pedido
-            </p>
-            <a class="finalizarPedido1" id="finalizarPedido1" href="#" target="_blank" >
-                Fazer pedido
-           </a>
+            <div class="confirmarTotal">
+                <p>Total</p>
+                <p id="confirmarTotal">teste123</p>
+            </div>
         </div>
-    </footer>
+        <button onclick="window.location.href=`https://wa.me/5544988598008?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20 ${comida} %0A-%20Bebida:%20 ${bebida} %0A-%20Sobremesa:%20 ${sobremesa} %0ATotal:%20R$%20 ${somaCorrigida} %0A%0ANome:%20 ${nome} %0AEndereço:%20 ${endereco}`;">Tudo certo, pode pedir!</button>
+        <a href="">Cancelar</a>
+    </div>
     <script src="script.js"></script>
+
 </body>
 </html>

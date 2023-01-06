@@ -1,4 +1,4 @@
-let comida, preco1Numero, bebida, preco2Numero, sobremesa, preco3Numero, soma, somaCorrigida
+let comida, preco1Numero, bebida, preco2Numero, sobremesa, preco3Numero, soma, somaCorrigida, novoURL, somaTotal, endereco, nome
 
 function selecionado(pratoSelecionado) {
     const primeiroSelecionado1 = document.querySelector(".bordaVerde1");
@@ -12,7 +12,7 @@ function selecionado(pratoSelecionado) {
    teste1.classList.toggle('bordaVerde1');
 
     comida = teste1.querySelector("h2").innerHTML;
-   let preco1 = teste1.querySelector("strong").innerHTML;
+   preco1 = teste1.querySelector("strong").innerHTML;
     preco1Numero = Number(preco1.replace(",","."));
    console.log(comida);
    console.log(preco1Numero)
@@ -33,7 +33,7 @@ function selecionado2(bebidaSelecionado) {
    teste2.classList.toggle('bordaVerde2');
 
    bebida = teste2.querySelector("h2").innerHTML;
-    let preco2 = teste2.querySelector("strong").innerHTML;
+    preco2 = teste2.querySelector("strong").innerHTML;
     preco2Numero = Number(preco2.replace(",","."));
    console.log(bebida);
    console.log(preco2Numero);
@@ -66,6 +66,8 @@ function selecionado3(sobremesaSelecionado) {
 
 }
 
+
+
 function verificar() {
     const verificar1 = document.querySelector(".bordaVerde1");
     const verificar2 = document.querySelector(".bordaVerde2");
@@ -76,19 +78,15 @@ function verificar() {
         const mudarBotao = document.querySelector(".botaoPedido");
         mudarBotao.classList.add("botaoVerde");
         
-        const finalizarBotao2 = document.querySelector(".finalizarPedido2");
-        finalizarBotao2.classList.add("escondido");
-        
-        const finalizarBotao1 = document.querySelector(".finalizarPedido1");
-        finalizarBotao1.classList.remove('finalizarPedido1')
-        finalizarBotao1.classList.add("aparecendo");
-        
         calculadorPedido();
 
         trocarURL();
 
+        
     }   
+
 }
+
 
 function calculadorPedido() {
     soma = preco1Numero + preco2Numero + preco3Numero;
@@ -96,10 +94,41 @@ function calculadorPedido() {
     console.log(somaCorrigida);
 }
 
-function trocarURL() {
-    let novoURL = `https://wa.me/5544988598008?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20 ${comida} %0A-%20Bebida:%20 ${bebida} %0A-%20Sobremesa:%20 ${sobremesa} %0ATotal:%20R$%20 ${somaCorrigida}`;
-    document.getElementById("finalizarPedido1").href = novoURL;
+function menuConfirmacao() {
+
+
+    document.getElementById("confirmarComida").innerHTML = comida;
+    document.getElementById("confirmarComidaPreco").innerHTML = preco1;
+
+    document.getElementById("confirmarBebida").innerHTML = bebida;
+    document.getElementById("confirmarBebidaPreco").innerHTML = preco2;
+
+    document.getElementById("confirmarSobremesa").innerHTML = sobremesa;
+    document.getElementById("confirmarSobremesaPreco").innerHTML = preco3;
+
+    somaTotal = somaCorrigida.replace(".",",");
+
+    document.getElementById("confirmarTotal").innerHTML = "R$ " + somaTotal;
+
+    let confirmar = document.querySelector(".menuConfirmacao");
+    confirmar.classList.remove("menuConfirmacao");
+    confirmar.classList.add("menuConfirmacao2");
+
+    const corpo = document.querySelector(".container");
+    corpo.classList.add("transparente");
+
+
+    nome = prompt("Qual o seu nome?");
+    endereco = prompt("Qual o seu endereço");
+
 }
 
+
+function trocarURL() {
+    novoURL = `https://wa.me/5544988598008?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20 ${comida} %0A-%20Bebida:%20 ${bebida} %0A-%20Sobremesa:%20 ${sobremesa} %0ATotal:%20R$%20 ${somaCorrigida}`;
+    /* document.getElementById("botaoPedido").href = novoURL; */
+    document.querySelector(".botaoPedido").innerHTML = "Fechar pedido";
+    document.getElementById("botaoPedido").disabled = false;
+}
 
 
