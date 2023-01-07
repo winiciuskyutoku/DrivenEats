@@ -273,12 +273,13 @@ h4 {
     margin-top: 24px;
 }
 
-.menuConfirmacao a, .menuConfirmacao2 a {
+.menuConfirmacao .cancelarPedido, .menuConfirmacao2 .cancelarPedido {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
+    background-color: #50D074; 
 
     margin-top: 10px;
 }

@@ -125,7 +125,7 @@ function menuConfirmacao() {
 
 
 function trocarURL() {
-    novoURL = `https://wa.me/5544988598008?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20 ${comida} %0A-%20Bebida:%20 ${bebida} %0A-%20Sobremesa:%20 ${sobremesa} %0ATotal:%20R$%20 ${somaCorrigida}`;
+    novoURL = `https://wa.me/5544988598008?text=Olá,%20gostaria%20de%20fazer%20o%20pedido:%0A-%20Prato:%20 ${comida} %0A-%20Bebida:%20 ${bebida} %0A-%20Sobremesa:%20 ${sobremesa} %0ATotal:%20R$%20 ${somaTotal}`;
     /* document.getElementById("botaoPedido").href = novoURL; */
     document.querySelector(".botaoPedido").innerHTML = "Fechar pedido";
     document.getElementById("botaoPedido").disabled = false;
